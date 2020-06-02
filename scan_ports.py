@@ -5,7 +5,7 @@ import mysql.connector as mysql
 
 def getIps(hosts):
     red = "200.33.171.*"
-    os.system("nmap -sP " + red + " > D:/Archivos/Descargas/TSW/tmp.txt")
+    os.system("nmap -sP " + red + " > tmp.txt")
     File = open(r"tmp.txt", "r")
     for line in File.readlines():
         line = line.rstrip()
